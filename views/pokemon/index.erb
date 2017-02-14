@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/pokestyle.css">
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <h2>All Pokemon</h2>
+    <% @pokemon.each do |pokemon| %>
+      <a><%= pokemon.name %></a>
+      <p><%= pokemon.id %></p>
+      <% end %>
+  </body>
+</html>
